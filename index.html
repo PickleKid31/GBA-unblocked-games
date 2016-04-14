@@ -5,7 +5,67 @@
         <title>Kool Kids Klub</title>
         <meta charset="UTF-8">
     </head>
-    <body background="anonymous_mask_2-wallpaper-1920x1080.jpg">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script language="JavaScript">
+<!--
+
+// (C) 2003 CodeLifter.com
+// Free for all users, but leave in this  header
+
+// =======================================
+// set the following variables
+// =======================================
+
+// Set speed (milliseconds)
+var speed = 3000
+
+// Specify the image files
+var Pic = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = 'img_1.jpg'
+Pic[1] = 'img_2.jpg'
+Pic[2] = 'img_3.jpg'
+Pic[3] = 'img_4.jpg'
+Pic[4] = 'img_5.jpg'
+Pic[5] = 'img_6.jpg'
+Pic[6] = 'img_7.jpg'
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runBGSlideShow(){
+   if (document.body){
+   document.body.background = Pic[j];
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runBGSlideShow()', speed)
+   }
+}
+
+//-->
+</script>
+</head>
+
+<body onload="runBGSlideShow()">
+</body>
+</html>
         <font face="calibri" color="white"> 
         <h1>GBA Emulator</h1>
         <h2>Select a Game:</h2>
