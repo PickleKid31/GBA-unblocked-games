@@ -1,2 +1,2 @@
 #Get this Website Blocked
-https://ballisticcgames.github.io/gba/
+https://picklekid31.github.io
